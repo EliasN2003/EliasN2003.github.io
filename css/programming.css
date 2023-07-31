@@ -1,0 +1,609 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/pages/Programming.jpg");
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Josefin Sans', 'Roboto Slab', 'sans-serif';
+    overflow-x: hidden;
+    max-width: 100%;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 12.5vh;
+    width: 100%;
+    background-color: black;
+    z-index: 5;
+}
+#logo {
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    z-index: 8;
+}
+#logo img {
+    width: auto;
+    height: 8vh;
+}
+.sidebar {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    transition: translate var(--animation-timing);
+    translate: 110%;
+    color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: black;
+}
+.sidebar nav {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+    color: white;
+    text-decoration: none;
+    gap: 0.5rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    list-style: none;
+    align-items: center;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button span {
+    color: #32FF06;
+}
+.button {
+    transition: .3s;
+}
+.button:hover {
+    color: #32FF06;
+}
+#navbar {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+:root {
+    --bar-width: 8vw;
+    --bar-height: 0.35vh;
+    --hamburger-gap: 6px;
+    --foreground: white;
+    --background: #333;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+.hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    z-index: 5;
+}
+.hamburger-menu:has(input:checked) {
+    --foreground: white;
+    --background: #333;
+    z-index: 5;
+}
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+}
+.hamburger-menu input,
+.hamburger-menu::before,
+.hamburger-menu::after {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transition: opacity var(--animation-timing), 
+    rotate var(--animation-timing), translate var(--animation-timing), width var(--animation-timing), background-color var(--animation-timing);
+    transform-origin: right center;
+}
+.hamburger-menu input {
+    appearance: none;
+    outline: none;
+}
+.hamburger-menu:has(input:checked)::before {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+.hamburger-menu:has(input:checked)::after {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+.hamburger-menu input:checked {
+    opacity: 0;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+    translate: 0;
+}
+.links span {
+    color: #32FF06;
+}
+#header-card {
+    width: 100%;
+    height: 100%;
+}
+#placer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0rem 0.8rem;
+    width: 85%;
+    height: fit-content;
+    color: #32FF06;
+    background-color: black;
+    border-radius: 20px;
+    border: 4px solid #32FF06;
+    font-size: 1.2rem;
+    padding: 1.25rem;
+}
+main {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+}
+.reverse-section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.videoholder {
+    width: 87.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+iframe {
+    position: relative;
+    border-radius: 20px;
+    height: 13rem;
+}
+.contents {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    color: #32FF06;
+    background: black;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0px auto 1rem auto;
+}
+.contents h2 {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+.contents p {
+    margin-bottom: 0.5rem;
+}
+#credit {
+    font-size: 1rem;
+    color: #171bff;
+}
+.github-button {
+    position: relative;
+    display: inline-block;
+    color: #25b904;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: rgb(25, 25, 25);
+    text-decoration: none;
+    padding: 0.9rem;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+.divider {
+    background-color: white;
+    width: 60%;
+    height: 1px;
+    margin: 0px auto;
+}
+footer {
+    display: none;
+}
+/* Scrollbar */
+::selection {
+    background-color: #32FF06;
+    color: #080808;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+::-webkit-scrollbar-thumb {
+    background: #32FF06;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2bc907;
+}
+
+/* Extra small */
+@media (min-width: 475px) {
+    #card {
+        font-size: 1.3rem;
+        padding: 1.7rem;
+    }
+    .videoholder {
+        width: 90%;
+    }
+    .divider {
+        width: 50%;
+    }
+    iframe {
+        height: 17rem;
+    }
+    :root {
+        --bar-width: 6.5vw;
+    }
+    .button {
+        font-size: 2.1rem;
+    }
+    .contents {
+        font-size: 1.7rem;
+    }
+    .github-button {
+        font-size: 1.1rem;
+    }
+}
+
+/* Phones */
+@media (min-width: 640px) {
+    #card {
+        font-size: 1.8rem;
+        padding: 2.5rem 1rem;
+    }
+    .videoholder {
+        width: 78%;
+    }
+    iframe {
+        height: 20rem;
+        width: 100%;
+    }
+    .contents {
+        font-size: 1.8rem;
+        width: 75%;
+    }
+    section {
+        padding: 3rem 0rem;
+    }
+    :root {
+        --bar-width: 5vw;
+    }
+    .button {
+        font-size: 2.2rem;
+    }
+    .github-button {
+        font-size: 1.3rem;
+    }
+    
+}
+@media (min-width: 800px) {
+    #card {
+        font-size: 1.8rem;
+        min-width: 50%;
+        max-width: 55%;
+    }
+    .videoholder {
+        width: 70%;
+    }
+    iframe {
+        height: 22rem;
+        width: 100%;
+    }
+    .contents {
+        font-size: 1.9rem;
+        width: 80%;
+    }
+    :root {
+        --bar-width: 4vw;
+    }
+    .button {
+        font-size: 2.4rem;
+    }
+    .github-button {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1024px) {
+    header {
+        border-bottom: 2px solid white;
+        position: relative;
+    }
+    #navbar {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95vw;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .sidebar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: translate var(--animation-timing);
+        translate: 0%;
+        color: var(--background);
+        width: auto;
+        height: auto;
+        z-index: 3;
+        background-color: transparent;
+    }
+    .sidebar nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+    .button {
+        padding: 0.5rem 0.7rem;
+        width: auto;
+        text-decoration: none;
+        color: white;
+        font-size: 1.6rem;
+    }
+    .button:hover {
+        color: #32FF06;
+        scale: 1.2;
+    }
+    #language {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        margin: auto 0px;
+    }
+    #language p {
+        display: none;
+    }
+    .links {
+        margin: 0px;
+        padding: 0px;
+        gap: 1.5vw;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+    }
+    #card {
+        margin-bottom: 10%;
+        padding: 3rem 0rem;
+    }
+    #placer {
+        height: 87.5vh;
+    }
+    section {
+        display: flex;
+        padding: 7.5% 0%;
+    }
+    .reverse-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .contents {
+        font-size: 1.6rem;
+        width: 45%;
+    }
+    .divider {
+        width: 35%;
+    }
+    .videoholder {
+        width: 45%;
+    }
+    iframe {
+        height: 20rem;
+        width: 100%;
+    }
+    .divider {
+        width: 35%;
+    }
+    .github-button:hover {
+        color: #32FF06;
+    }
+    .github-button span {
+        display: block;
+        position: absolute;
+        background-color: #32FF06;
+    }
+    .github-button span:nth-child(1) {
+        left: 0;
+        bottom: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.15s;
+    }
+    .github-button:hover span:nth-child(1) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.15s;
+    }
+    .github-button span:nth-child(2) {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.15s;
+    }
+    .github-button:hover span:nth-child(2) {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.15s;
+    }
+    .github-button span:nth-child(3) {
+        right: 0;
+        bottom: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.15s;
+        transition-delay: 0.15s;
+    }
+    .github-button:hover span:nth-child(3) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.15s;
+        transition-delay: 0.15s;
+    }
+    .github-button span:nth-child(4) {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.15s;
+        transition-delay: 0.15s;
+    }
+    .github-button:hover span:nth-child(4) {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.15s;
+        transition-delay: 0.15s;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        height: 12.5vh;
+        border-top: 3px solid white;
+    }
+    footer nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95vw;
+        height: 100%;
+    }
+    footer h2 {
+        padding: 0px 0.3rem;
+        font-size: 1.7rem;
+    }
+}
+@media (min-width: 1280px) {
+    .links {
+        font-size: 1.8vw;
+    }
+    #placer {
+        height: 87.5vh;
+        width: 100%;
+    }
+    #card {
+        width: fit-content;
+        font-size: 2.25rem;
+        padding: 3.2rem 0.5rem;
+        margin-bottom: 5%;
+    }
+    .contents {
+        font-size: 1.7rem;
+        width: 45%;
+        padding: 2rem;
+    }
+    .button {
+        font-size: 2rem;
+    }
+    #credit {
+        font-size: 1.5rem;
+    }
+    .github-button {
+        font-size: 1.8rem;
+    }
+    .contents p {
+        margin-bottom: 1rem;
+    }
+    .videoholder {
+        width: 40%;
+    }
+    iframe {
+        height: 25rem;
+        width: 100%;
+    }
+    section {
+        display: flex;
+        height: 90vh;
+        padding: 0px;
+    }
+    .divider {
+        display: none;
+    }
+}

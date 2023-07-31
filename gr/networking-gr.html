@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΗΝ - Δίκτυα</title>
+    <link rel="stylesheet" href="/css/networking.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="header-card">
+    <header>
+      <nav id="navbar">
+        <a id="logo" href="/gr/index-gr"><img src="/images/Logo white.png" alt="My logo with my initials on it"></a>
+
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div class="links">
+              <a class="button home" href="/gr/index-gr">Αρχική</a>
+              <a class="button programs" href="/gr/programming-gr">Προγράμματα</a>
+              <a class="button networks" href="/gr/networking-gr"><span>Δίκτυα</span></a>
+              <a class="button about" href="/gr/about-gr">Σχετικά με εμένα</a>
+              <a class="button contact" href="/gr/contact-gr">Επικοινωνία</a>
+              <a id="language" href="/en/networking">
+                <p>English</p> 
+                <img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/United-States-Flag-icon.png" width="32" height="32" alt="USA flag">
+              </a>
+            </div>
+          </nav>
+        </aside>
+      </nav>
+    </header>
+    <div id="placer">
+      <div id="card">
+        <h1>Σχέδια</h1>
+        <h1>δικτύων</h1>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section data-aos="fade-left">
+      <div class="contents">
+        <h2>Δίκτυο πανεπιστημίου</h2>
+        <p>Σε αυτό το σχέδιο έχουμε ένα δίκτυο παρόμοιο με αυτό που θα βλέπαμε σε μεγάλους οργανισμούς.
+          Εδώ έχουμε 8 υποδίκτυα από τα οποία χρησιμοποιούμε τα 5. Τα μεγάλα δίκτυα είναι συχνά επιρρεπή σε βλάβες εξαρτημάτων.
+          Σε αυτό το παράδειγμα, εάν το κεντρικό switch αποτύχει, τότε ολόκληρο το δίκτυο δεν θα μπορεί να επικοινωνήσει με τον εαυτό του ή
+          τον έξω κόσμο. Αυτός είναι ο λόγος για τον οποίο έχουμε 2 κεντρικά switches, οπότε εάν ένα από αυτά χαλάσει, το δίκτυο θα εξακολουθεί να λειτουργεί.
+          Το ίδιο μπορεί να γίνει και για το δρομολογητή/ρούτερ. Σημειώστε ότι όλα τα υποδίκτυα σε αυτό το παράδειγμα μπορούν να επικοινωνούν μεταξύ τους με
+          στατική δρομολόγηση. Εάν θέλουμε τη μέγιστη ασφάλεια, τότε θα πρέπει να αποφύγουμε την στατική δρομολόγηση
+          γιατί εάν ένα υποδίκτυο μολυνθεί η επίθεση μπορεί να εξαπλωθεί και στα άλλα. Για να το αποτρέψουμε αυτό, απομονώνουμε το κάθε υποδίκτυο ώστε να
+          μπορεί να επικοινωνήσει μόνο με το διαδίκτυο αλλά όχι με τα άλλα υποδίκτυα.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/university campus.png"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα εικόνας</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1Jj1iDcWZmrCblo4OFA2oR0spjagjvWQs?usp=sharing"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα σχεδίου</a>
+      </div>
+      <div class="images">
+        <img draggable="false" src="/images/networks/university campus.png" alt="">
+      </div>
+    </section>
+
+    <section data-aos="fade-right" class="reverse-section">
+      <div class="images">
+        <img draggable="false" src="/images/networks/iot network.png" alt="">
+      </div>
+      <div class="contents">
+        <h2>Διαδίκτυο των πραγμάτων (IoT)</h2>
+        <p>Με τον όρο διαδίκτυο των πραγμάτων αναφερόμαστε στη τεχνολογία που αποτελεί το δίκτυο 
+          επικοινωνίας όλων των συσκευών που ενσωματώνουν αισθητήρες, λογισμικό και είναι ικανές να ανταλλάσσουν πληροφορίες 
+          μεταξύ τους μέσω του διαδικτύου. Καθημερινές συσκευές μπορούν να συνδέονται στο οικιακό σας δίκτυο και να επικοινωνούν με το κινητό σας
+          δίνοντάς σας τη δυνατότητα να τα ελέγχετε χωρίς να είστε στο σπίτι σας. Αυτό βοηθάει αν θέλετε
+          να προθερμάνετε το νερό μια κρύα μέρα του χειμώνα ή να ενεργοποιήσετε το κλιματιστικό από μακριά.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/iot network.png"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα εικόνας</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/19PktjqhFRN0RFciBIp3A5o9EtaI0rPxy?usp=share_link"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα σχεδίου</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section data-aos="fade-left">
+      <div class="contents">
+        <h2>Διακομιστής ιστού (server)</h2>
+        <p>Αυτό το σχέδιο διαθέτει έναν server που φιλοξενεί μια ιστοσελίδα που μπορεί να επισκεφθεί οποιοσδήποτε χρήστης από το δίκτυο 1 (δεξιά).
+           Το δίκτυο 2 (αριστερά) διαθέτει επίσης έναν διακομιστή DNS που βοηθά τον χρήστη να βρει τον ιστότοπο πληκτρολογώντας το
+          όνομα της ιστοσελίδας. Οι 2 δρομολογητές (routers) επικοινωνούν μέσω δρομολόγησης RIP που έχει ρυθμιστεί
+          στο CLI τους και επίσης λειτουργούν ως DHCP servers για τα δίκτυα τους.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/web server.png"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα εικόνας</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1ztMS-KyRFiHtfqCS-p6uG2T56fMix2-u?usp=share_link"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα σχεδίου</a>
+      </div>
+      <div class="images">
+        <img draggable="false" src="/images/networks/web server.png" alt="">
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section data-aos="fade-right" class="reverse-section">
+      <div class="images">
+        <img draggable="false" src="/images/networks/2 subnets.png" alt="">
+      </div>
+      <div class="contents">
+        <h2>2 υποδίκτυα</h2>
+        <p>Αυτό το δίκτυο έχει χωριστεί στη μέση και έχει δημιουργήσει 2 μικρότερα υποδίκτυα. Αυτή η διαδικασία ονομάζεται
+          υποδικτύωση και είναι πολύ χρήσιμη στα δίκτυα γιατί έτσι μπορείτε να οργανώσετε καλύτερα τα δίκτυά σας και να κάνετε οικονομία σε 
+          πολύτιμες διευθύνσεις IP που μπορείτε να χρησιμοποιήσετε αλλού. Επίσης, προσθέτει ένα επιπλέον επίπεδο προστασίας επειδή 
+          μπορεί να απομονώσει τα υποδίκτυά σας ώστε να μην μπορούν να επικοινωνούν μεταξύ τους και ως εκ τούτου
+          σε περίπτωση που κάποιος παραβιάσει το ένα υποδίκτυο δεν θα έχει πρόσβαση στο άλλο.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/2 subnets.png"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα εικόνας</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1dPhqlArhCHmgbsAwtHuTOasieQ_gjGuR?usp=share_link"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα σχεδίου</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section data-aos="fade-left">
+      <div class="contents">
+        <h2>Οικιακό δίκτυο</h2>
+        <p>Αυτό είναι ένα κοινό οικιακό δίκτυο που έχει ασύρματες και ενσύρματες συσκευές συνδεδεμένες σε αυτό. Το ρούτερ
+          λειτουργεί ως διακομιστής DHCP και ως προεπιλεγμένη πύλη για τη σύνδεση των άλλων συσκευών στο διαδίκτυο.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/home network.png"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα εικόνας</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1gTJdVnmtY3O8oSG6FoiTCtcTQn7dgzDJ?usp=share_link"><span></span><span></span><span></span><span></span><span></span>Άνοιγμα σχεδίου</a>
+      </div>
+      <div class="images">
+        <img draggable="false" src="/images/networks/home network.png" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <div class="links">
+        <a class="button home" href="/gr/index-gr">Αρχική</a>
+        <a class="button programs" href="/gr/programming-gr">Προγράμματα</a>
+        <a class="button networks" href="/gr/networking-gr"><span>Δίκτυα</span></a>
+        <a class="button about" href="/gr/about-gr">Σχετικά με εμένα</a>
+        <a class="button contact" href="/gr/contact-gr">Επικοινωνία</a>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 450,
+      duration: 800,
+      once:"true"
+    });
+  </script>
+</body>
+</html>

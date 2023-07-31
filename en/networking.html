@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN - Networking</title>
+    <link rel="stylesheet" href="/css/networking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div id="header-card">
+    <header>
+      <nav id="navbar">
+        <a id="logo" href="/"><img src="/images/Logo white.png" alt="My logo with my initials on it"></a>
+
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div class="links">
+              <a class="button home" href="/">Homepage</a>
+              <a class="button programs" href="/en/programming">Programming</a>
+              <a class="button networks" href="/en/networking"><span>Networking</span></a>
+              <a class="button about" href="/en/about">About</a>
+              <a class="button contact" href="/en/contact">Contact</a>
+              <a id="language" href="/gr/networking-gr">
+                <p>Ελληνικά</p> 
+                <img src="https://icons.iconarchive.com/icons/twitter/twemoji-flags/32/Greece-Flag-icon.png" width="32" height="32" alt="Greek flag">
+              </a>
+            </div>
+          </nav>
+        </aside>
+      </nav>
+    </header>
+    <div id="placer">
+      <div id="card">
+        <h1>Network</h1>
+        <h1>designs</h1>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section data-aos="fade-left">
+      <div class="contents">
+        <h2>University campus</h2>
+        <p>In this design we have a network similar to what we would see in real life in big organizations. 
+          Here we have 8 subnets out of which we use 5 of them. Large networks are often valnurable to component failures. 
+          In this example if the main switch fails then the whole network will be unable to communicate with themselves or 
+          the outside world. This is why we have 2 main switches so if one of them fails, the network will still be functional. 
+          Same thing can also be done for the router. Note that all subnets in this example can communicate with each other with 
+          static routing configured on their interfaces. If it's maximum security that we are after then we should avoid this 
+          because if one subnet gets infected the attack will spread to the others. To prevent that, we isolate each subnet so 
+          it can only communicate with the internet and not the other subnets.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/university campus.png"><span></span><span></span><span></span><span></span><span></span>Open image</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1Jj1iDcWZmrCblo4OFA2oR0spjagjvWQs?usp=sharing"><span></span><span></span><span></span><span></span><span></span>View project</a>
+      </div>
+      <div class="images">
+        <img draggable="false" src="/images/networks/university campus.png" alt="A large university network">
+      </div>
+    </section>
+
+    <section data-aos="fade-right" class="reverse-section">
+      <div class="images">
+        <img draggable="false" src="/images/networks/iot network.png" alt="An IOT network with wireless devices communicating with a server ">
+      </div>
+      <div class="contents">
+        <h2>IOT Network</h2>
+        <p>IOT stands for Internet Of Things and it's a critical innovation that we have in our service today. 
+          Basically, every day devices can connect to your home network and communicate with your mobile device 
+          giving you the ability to control them without being home. This helps if you want 
+          to preheat the water on a cold winter day or turn on the AC remotely. This is what this 
+          project is based on since you can turn on and off all home appliances with the smartphone.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/iot network.png"><span></span><span></span><span></span><span></span><span></span>Open image</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/19PktjqhFRN0RFciBIp3A5o9EtaI0rPxy?usp=share_link"><span></span><span></span><span></span><span></span><span></span>View project</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section data-aos="fade-left">
+      <div class="contents">
+        <h2>Web server</h2>
+        <p>This design features a functioning web server that hosts a website that any user from network 1 (right) can 
+          access. Network 2 (left) also has a DNS server that helps the user find the website by typing in its domain 
+          name than the ip address of the website. The 2 routers communicate through RIP routing configured on 
+          their CLI panel and also act as a DHCP server for their network.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/web server.png"><span></span><span></span><span></span><span></span><span></span>Open image</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1ztMS-KyRFiHtfqCS-p6uG2T56fMix2-u?usp=share_link"><span></span><span></span><span></span><span></span><span></span>View project</a>
+      </div>
+      <div class="images">
+        <img draggable="false" src="/images/networks/web server.png" alt="Some devices on the right network communcating with a server on the left">
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section data-aos="fade-right" class="reverse-section">
+      <div class="images">
+        <img draggable="false" src="/images/networks/2 subnets.png" alt="2 subnets communicating with each other">
+      </div>
+      <div class="contents">
+        <h2>2 subnets</h2>
+        <p>This network has been split in half and has created 2 smaller subnets. This process is called 
+          subnetting and is very useful in networking because you can organize your networks better and save 
+          valuable ip addresses you can use elsewhere. Also it adds an extra level of protection because you 
+          can isolate your subnets so they can't communicate with each other and as a result 
+          in the event that someone hacks into one subnet he will not have access to the other one immediately.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/2 subnets.png"><span></span><span></span><span></span><span></span><span></span>Open image</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1dPhqlArhCHmgbsAwtHuTOasieQ_gjGuR?usp=share_link"><span></span><span></span><span></span><span></span><span></span>View project</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section data-aos="fade-left">
+      <div class="contents">
+        <h2>Home network</h2>
+        <p>This is a common home network that has both wireless and wired devices connected to it. The router 
+          acts as a DHCP server and as the default gateway for the other devices to connect to the internet.
+        </p>
+        <a class="open-img-btn" target="_blank" rel="noreferrer noopener" href="/images/networks/home network.png"><span></span><span></span><span></span><span></span><span></span>Open image</a>
+        <a class="Gdrive-button" target="_blank" rel="noreferrer noopener" href="https://drive.google.com/drive/folders/1gTJdVnmtY3O8oSG6FoiTCtcTQn7dgzDJ?usp=share_link"><span></span><span></span><span></span><span></span><span></span>View project</a>
+      </div>
+      <div class="images">
+        <img draggable="false" src="/images/networks/home network.png" alt="A regular home network with wired and wireless devices connected on it">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <div class="links">
+        <a class="button home" href="/">Homepage</a>
+        <a class="button programs" href="/en/programming">Programming</a>
+        <a class="button networks" href="/en/networking"><span>Networking</span></a>
+        <a class="button about" href="/en/about">About</a>
+        <a class="button contact" href="/en/contact">Contact</a>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 450,
+      duration: 800,
+      once:"true"
+    });
+  </script>
+</body>
+</html>

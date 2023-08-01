@@ -10,6 +10,7 @@ body {
     url("/images/pages/Contact.jpg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     font-family: 'Josefin Sans', 'Roboto Slab', 'sans-serif';
 }
 header {
@@ -174,6 +175,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 #title, #socials {
     width: 90%;

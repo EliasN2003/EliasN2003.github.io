@@ -199,6 +199,7 @@ main {
     justify-content: center;
     width: 100%;
     height: fit-content;
+    overflow: hidden;
 }
 section {
     display: block;

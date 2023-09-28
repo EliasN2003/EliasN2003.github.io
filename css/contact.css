@@ -414,7 +414,7 @@ main {
         #c61a95, #ba1da3, #ab25b1, #962fbf);
     }
     .social-menu ul li:nth-child(2) a:hover {
-        background-color: #0A66C2;
+        background-color: white;
     }
     .social-menu ul li:nth-child(3) a:hover {
         background-color: white;
@@ -433,6 +433,9 @@ main {
     }
     .social-menu ul li .yt:hover {
         color: #CD201F;
+    }
+    .social-menu ul li .linkedin:hover {
+        color: #0064c9;
     }
     .social-menu ul li a {
         width: 3.5rem;
